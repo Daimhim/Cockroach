@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'//添加
 
 android {
     compileSdkVersion 28
@@ -21,14 +20,4 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'me.weishu:free_reflection:1.2.0'
-}
-
-//添加
-publish {
-//    userOrg = 'wanjiannotes'
-    groupId = 'com.wanjian'
-    artifactId = 'cockroach'
-    publishVersion = '0.0.5'
-    desc = '打不死的小强 , 永不crash的Android'
-    website = 'https://github.com/android-notes/Cockroach'
 }
